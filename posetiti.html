@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Posetiti</title>
+	<script type="text/javascript" src="JavaScript/animacija.js"></script>
+	<script type="text/javascript" src="JavaScript/iskociProzor.js"></script>
+	<script type="text/javascript" src="JavaScript/cssIzmena.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+		<style>
+		h1{
+			font-size:100%;
+			color:(51, 0, 37);
+		}
+		li{
+			font-size: 150%;
+			font-family: courier;
+			background: linear-gradient(to top right, #ff66ff 6%, #ffffff 91%);
+			width: 60%;
+			text-align: center;
+		}
+		.lista{
+			font-size: 200%;
+			background: linear-gradient(to right, #ff9966 0%, #ff99cc 100%);
+			width: 80%;
+			color: #800040;
+  			}
+	</style>
+</head> 
+<body onload="animacija(),prozorIskace(),promeniIzgledLi(),izbrisiElement(),vratiElement()">
+	<div>
+		<audio id="Audio">
+        	<source src="mp3/Mozart.mp3" type="audio/mpeg"></audio>
+			<img src="images/mozart.png" style="position: absolute; left: 10px; top: 0px;" height="115px" width="130px" id="mozart1" onclick="pustiAudio()" onclick="pauzirajAudio()">
+			<img src="images/mozart.png" style="position: absolute; right: 10px; top: 0px;" height="115px" width="130px" id="mozart2" onclick="pustiAudio()" onclick="pauzirajAudio()">
+	</div>
+	<center><table class="pozadina"></center>
+		<tr>
+		<td id="meni"><a href="home.html"><h1>POČETNA</h1></a></td>
+		<td id="meni"><a href="istorija.html"><h1>ISTORIJA</h1></a></td>
+		<td id="meni"><a href="kultura.html"><h1>KULTURA</h1></a></td>
+		<td id="meni"><a href="posetiti.html"><h1>POSETITI</h1></a></td>
+		<td id="meni"><a href="anketa.html"><h1>ANKETA</h1></a></td></tr>
+	</table><br><br>
+	<div>
+		<span><strong>ŠTA TREBA OBAVEZNO POSETITI U BEČU?</strong></span>
+	</div><br><br>
+	<form class="form">
+		<fieldset  id="forma" onclick="return izbrisiElement()">
+			Zadivljujuća arhitektura i bogata kulturna ponuda nekada carskog grada Beča čine ga jednom od omiljenih turističkih destinacija u svetu. Velika četvorka - Hajdn, Mocart, Betoven i Šubert čine ga gradom muzike. Beč nije samo grad valcera, prelepih dvoraca i bogatih muzejskih kolekcija već i mesto u kome se možete opustiti uz Zaher tortu i Mocartove kugle, uživati u pogledu sa velikog panoramskog točka ili posetiti po mnogima najbolji zoološki vrt u Evropi.
+		</fieldset>
+	</form><br>
+	<table class="tabla" width="1320px" height="150%" bgcolor="#E8CFE8">
+		<tr>
+		<td>
+			<center><b>(Ako ste završili sa čitanjem teksta iznad, kliknite na njega da ga uklonite!)</b></center>
+			<ol>
+				<li><b><ins>Dvorac Šenbrun</ins></b></li>
+				<p>
+				Nekadašnja letnja rezidencija Habsburgovaca predstavlja najposećeniju turističku atrakciju Beča i mesto na kome se pisala istorija Austrije. Dvorac Šenbrun okružuju lepo uređeni vrtovi.
+				Iznad palate na uzvišenju nalazi se Glorijet koji je nekada služio kao sala za prijeme a danas je pretvoren u kafić. Sa vrha Glorijeta se može videti kompleks Šenbruna i Beč.</p>
+				<p><strong>Dvorac Šenbrun</strong> je na listi <mark>UNESKO</mark> svetske baštine od 1996. godine. Šenbrun nije samo palata, vrtovi koji su deo kompleksa su prava oaza u sred grada. Ulaz u glavni, prostrani deo vrta je potpuno besplatan. U toku leta ogroman park je prepun sveća ali ne i tokom proleća kada ni mnoge fontane ne rade.Tokom božićnih i uskršnjih praznika ispred palate Šenbrun organizuje se sajam. Na 60-tak štandova osim rukotvorina iz cele Austrije nalazi se i bogata gastronomska ponuda. Osim Šenbrunskog uskršnjeg sajma koji se smatra za centralni poznat je i onaj na trgu Frajung.</p>
+				<p><a target="_blank" href="https://www.schoenbrunn.at/en/"><img src="images/senbrun.jpg" align="right" width="600px" height="300"></a></p>
+				<p><iframe align="left" width="600px" height="300" src="https://www.youtube.com/embed/fEYA5glblDM">
+				</iframe></p><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<p><br><br><li><b><ins>Dvorac Belvedere</ins></b></li>
+				<p>Dvorac čine zapravo dve palate - <b><i>Gornji i Donji Belveder</i></b> i za ovaj dvorac neki tvrde da je najlepša barokna građevina na svetu. Raskošan vrt je prepun skulptura, fontana i vodenih kaskada a sa gornje palate se osim na vrt pruža prelep pogled na Beč pa otud i ime ovog dvorca Belvedere (lep pogled). Podignut je u 18. veku kao letnja rezidencija princa i velikog vojskovođe Eugena Savojskog.
+				Danas je <a target="_blank" href="https://www.belvedere.at/en"> dvorac Belveder</a> pretvoren u muzej. U gornjoj palati dvorca može se videti najveća kolekcija slikara Gustafa Klimta na svetu ali i delima umetnika kao što je francuski impresionista Klod Mone ili holandski postimpresionista Vinsent van Gog.</p>
+				<p>Podignut je u XVIII veku kao letnja rezidencija princa i velikog vojskovođe Eugena Savojskog <i>(1663–1736)</i>. Izgradnja donje palate počinje 1714. godine a u periodu 1720. do 1723. podignuta je gornja palata dvorca Belvedere. Zgrade su obnovljene posle teških oštećenja koje su pretrpele u bombardovanju Beča za vreme II svetskog rata.</p>
+				<iframe src="https://www.youtube.com/embed/h9ENthm55mo" align="center" width="1200px" height="500px"></iframe><br><br>
+				<li><b><ins>Hofburg</ins></b></li>
+				<p><a target="_blank" href="https://www.hofburg-wien.at/en/"> Hofburg</a> je veliki kompleks rezidencija moćnog Habsburškoga carstva u centru Beča nastao u periodu od XIII do početka XX veka. Sve do kraja Prvog svetskog rata Hofburg je bio prestonica Habsburške monarhije.
+				Deo Hofburga je zvanična rezidencija predsednika Republike Austrije, a veći deo je pretvoren u muzeje među kojima su: Odaja sa blagom, Carski apartmani, Muzej carice Sisi, Nacionalna biblioteka, Etnološki muzej, Efesov muzej, Muzej starih muzičkih instrumenata.U Hofburgu se čuva carska kruna Svetog Rimskog carstva.</p>
+				<img src="images/hofburg.jpg" align="left" width="500px" height="300px">
+				<p><p><b>Muzej posvećen Sisi</b> veoma živopisno oslikava život omiljene carice Elizabete od Bavarije poznatije kao Sisi koja je živela u periodu od 1837. do 1898. godine. Za cara Franju Josipa I se udaje 1854. godine koji je trebao da oženi njenu sestru ali se zaljubljuje u tada 15 godina staru Elizabetu. Carski par je živeo u dvorcu Šenbrun i u Hofburgu. Sisi je bila inteligentna, nadarena, izuzetno lepa a posebno su je zanimale književnost i istorija.
+				U muzeju se nalazi preko 300 eksponata a neki od njih su lični predmeti carice Sisi poput rukavica i suncobrana. Među eksponatima je i rekonstruisana raskošna haljina kakvu je nosila sa 16 godina kada je napuštala Minhen. Jedna od soba je posvećena njenom ubistvu. Muzej je rekonstruisan 2009. godine kada je dobio i brojne nove eksponate.</p>
+				<p>U kompleksu se nalazi i <b>Španska škola jahanja <i>(Spanische Reitschule)</i></b> poznata po paradnim konjima lipicanerima i tradiciji od 450 godina. Sistematskim treningom stvara se vrhunska elegancija u kretanju ove divne životinje. Cene ulaznica za predstave su dosta visoke ali može se posetiti njihov trening za nekoliko puta manji iznos.</p><br>
+				<li><b><ins>Katedrala Svetog Stefana</ins></b></li>
+				<a target="_blank" href="https://www.stephanskirche.at/"><img src="images/svkatedrala.jpg" align="right" height="350px"></a>
+				<p>Ova katedrala posvećena svetom arhiđakonu Stefanu nalazi se u centru Beča i sedište je bečke nadbiskupije.
+				Prva crkva na ovom mestu je izgrađena 1147. godine ali je nekoliko puta rušena, prepravljana i nadograđivana a poslednju veliku rekonstrukciju doživljava posle velikih oštećenja tokom bombardovanja Beča 1945. godine.</p>
+				<p>
+				Katedrala Sv. Stefana je gotička građevina prepoznatljiva po karakterističnom krovu sa 200.000 crepova i ogromnom zvonu naziva Pumerin od 20 tona koje se nalazi u severnom tornju koje je treće zvono po veličini u Evropi. Staro Pumerin zvono izliveno je 1705 godine od 208 od ukupno 300 topova zarobljenih tokom turske opsade Beča. Novo zvono je izliveno 1951. od metala starog zvona uz dodatak metala od turskih topova iz vojnog muzeja.
+				Moguće je popeti se na toranj katedrale visok 134m sa kojeg se pruža izuzetan pogled na grad Beč. Poseta tornju nije besplatna.</p>
+				<p>Link sajta katedrale na sliku -----></p>
+				<li><b><ins>Ringstrasse</ins></b></li>
+				<p>Najpoznatija ulica u Beču <a target="_blank" href="https://stavideti.com/img/austrija/bec/opera-1-2c.jpg"><i><strong>(Ringstrasse)</strong></i></a> dugačka je 5km i kruži oko užeg gradskog jezgra. Često je nazivaju i samo Ring. Izgradnja je počela dekretom cara Franje Josipa I iz 1857. godine kada je doneta i odluka da se sruše gradski bedemi čime Beč dobija potpuno novi izgled.</p>
+				<p>Na Ringštraseu se se nalaze mnogobrojne najznačajnije gradske znamenitosti poput zgrade Bečke državne opere, Parlamenta, Gradske kuće, Univerziteta, Berze, Muzeja istorije umetnosti, Prirodnjačkog muzeja, Muzeja primenjene umetnosti. Tu su i spomenici Geteu i Johanu Štrausu kao i parkovi Stadtpark i Rathauspark.Oni koje ne žele da hodaju duž ulice mogu je za 25 minuta obići tramvajem koji polazi sa Schwedenplatz-a na svakih pola sata.</p>
+				<li><b><ins>Muzej istorije umetnosti i Prirodnjački muzej</ins></b></li>
+				<p><strong>Muzej istorije umetnosti <i>(Kunsthistorisches Museum)</i></strong> sadrži vrednu kolekciju umetničkih dela koju su habsburgovci sakupljali od 16-tog veka, a eksponati koji se mogu videti potiču od perioda antičkog Egipta pa do 18-tog veka.
+				Posebno je vredna kolekcija slika starih majstora renesansnog i baroknog slikarstva italijanske, flamanske, nemačke i španske škole u kojoj su i dela Karavađa, Rafaela, Rubensa, Rembranta, Durera, Tintoreta.
+				U sastav ovog muzeja danas ulaze i drugi veliki bečki i austrijski muzeji.</p>
+				<p><strong>Prirodnjački muzej <i>(Naturhistorisches Museum)</i></strong> nalazi se na trgu Marije Terezije preko puta Muzeja istorije umetnosti i u zgradi je identičnog izgleda. Osnovan je davne 1889. godine a nastaje od kolekcije iz 18-tog veka.
+				Jedan je od najvećih svetskih muzeja te vrste sa čak 500.000 eksponata. Glavna atrakcija muzeja je Venera iz Vilendorfa, mali ali vrlo ekspresivan kip star oko 29.500 godina. Muzej poseduje najveću i najstariju javnu kolekciju meteora na svetu. Bogate su i kolekcije minerala, dragog kamenja i retkih fosila. Pažnju posetilaca posebno privlače i kosturi dinosaurusa.</p>
+				<p>O ovim muzejima je bilo reči na stranici o <a href="kultura.html">kulturi grada Beča</a>.</p>
+				<li><b><ins>Bečka državna opera</ins></b></li><br>
+				<img src="images/opera.jpg" align="left" width="400px">
+				<p>Zgrada opere je izgrađena u stilu neorenesanse između 1861. do 1869. godine. Za vreme izgradnje zgrade Bečke državne opere visina ulice je podignuta za metar što je izmenilo izgled građevine i izazvalo još više negodovanja povodom izgleda opere. Prvobitno je nosila naziv Bečka dvorska opera. Sama zgrada nije previše dolazila do izražaja do Drugog svetskog rata kada je srušena monumentalna zgrada Heinrichshof preko puta Opere.</p>
+
+				<p>
+				<a target="_blank" href="https://www.wiener-staatsoper.at/en/"> Bečka državna opera</a> otvorena je 15. maja 1869. izvođenjem opere “Kažnjeni razvratnik ili Don Đovani” iz 1787. godine najvećeg kompozitora klasicizma Mocarta koji je ovo delo smatrao svojom najozbiljnijom operom. Osim po bogatom repertoaru danas je poznata i po Operskom balu.
+
+				Nalazi se u najpoznatijoj ulici u Beču <i>(Ringstrasse)</i> u blizini muzeja Albertina. Prvo je zdanje napravljeno na bečkom Ringu a deo ove ulice nosi i naziv po Operi(Opernring).</p>
+				<p>Sama zgrada svojom lepotom pleni i osvaja svakog ljubitelja kulture i umetnosti koji poseti ovaj grad</p><br>
+				<li><b><ins>Karlov trg</ins></b></li>
+				<p><a target="_blank" href="https://stavideti.com/img/austrija/bec/karlov-trg/karlskirche-1.jpg"><b>Karlov trg <i>(Karlsplatz)</i></b></a> je jedan od najprometnijih gradskih trgova i veliko saobraćajno čvorište. Trg se nalazi na dvestotinak metara od ulice Ringštrase.Na trgu se nalazi Karlova crkva (Karlskirche) u baroknom stilu sa elementima rokokoa podignuta 1737. godine. Centralni deo spoljnog dela crkve izgrađen je po uzoru na grčke antičke hramove. Izgradnju crkve pokreće Karlo VI nakon velike kuge iz 1712. godine. Smatra se najlepšom crkvom u Beču.</p>
+				<li><b><ins>Prater</ins></b></li>
+				<img src="images/prater.jpg" align="right" width="300px" height="250px">
+				<p>Prater je veliki javni park. Svetska izložba 1873. godine je održana ovde. Veštačku lagunu koju zovu i “Venecija u Beču” dobija 1895.godine.U parku se nalazi preko 250 različitih atrakcija među kojima i železnica uskog koloseka, rolerkosteri, planetarijum i Prater muzej.Danas je simbol parka veliki točak iz 1879. godine visok 65 metara koji se i danas koristi i sa koga se pruža pogled na čitav Beč.Točak predstavlja jednu od najvećih atrakcija Beča i vrlo je čest motiv na suvenirima.Još jedan neobičan predmet koji se može naći u Viener Prateru je Republika Kugelmugel (Republika Kugelmugel), sferna mikronacija. Viener Prater takođe ima planetarijum i muzej Prater.</p>
+				<p>Ime Prater potiče od jedne ili druge latinske reči <i><b>pratum</b></i>, što znači livada, i <i><b>Praetora</b></i>, odnosno sudije ili advokata, možda preko španskog prada ili italijanskog prata.</p>
+				<li><b><ins>Dunavski toranj</ins></b></li>
+				<p>Dunavski toranj <i><b>(Donauturm)</b></i> poznat je i pod nazivom Betonska igla i predstavlja vrlo popularnu turističku atrakciju sa godišnjom posetom od gotovo pola miliona posetilaca. Toranj je visok <mark>252</mark> metra i sa njega se pruža izvanredan pogled na grad Beč. Podignut je 1964. godine. Nalazi u Dunavskom parku <i>(Donaupark)</i> u modernom delu Beča između 21. i 22. bečkog okruga.Dva brza lifta posetioce voze do platforme za posmatranje na 150m visine za 35 sekundi. Sa platforme se vidi čitav Beč, a kada je vedro vreme i do 80km u daljinu.Na visini od 160 metara Dunavskog tornja nalazi se kafe a na 170 metara i restoran koji se kao i kafe okreće polako oko svoje ose.</p>
+				<img src="images/donauturm.jpg" align="center" width="1250px">
+			</ol></p></p></ol>
+			<h3><center>Radi lakšeg snalaženja u Beču prilikom obilaska svih ovih prelepih lokacija, prilažemo Vam mapu koja Vam može biti veoma korisna!</h3></center>
+			<center><img class="mapa" src="images/mapa.png"></center>
+			</td></tr>
+	</table><br>
+	<center><table class="pozadina"></center>
+		<tr>
+		<td id="meni"><a href="home.html"><h1>POČETNA</h1></a></td>
+		<td id="meni"><a href="istorija.html"><h1>ISTORIJA</h1></a></td>
+		<td id="meni"><a href="kultura.html"><h1>KULTURA</h1></a></td>
+		<td id="meni"><a href="posetiti.html"><h1>POSETITI</h1></a></td>
+		<td id="meni"><a href="anketa.html"><h1>ANKETA</h1></a></td></tr>
+	</table></center>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Istorija</title>
+	<script type="text/javascript" src="JavaScript/animacija.js"></script>
+	<script type="text/javascript" src="JavaScript/cssIzmena.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+		<style>
+		*{
+			font-family: arial;
+		}
+		h1{
+			font-size:100%;
+			color:(51, 0, 37);
+		}
+		p {
+			text-align: center;
+		}
+	</style>
+</head> 
+<body onload="animacija(),istorija()">
+	<div>
+		<audio id="Audio">
+        	<source src="mp3/Mozart.mp3" type="audio/mpeg"></audio>
+			<img src="images/mozart.png" style="position: absolute; left: 10px; top: 0px;" height="115px" width="130px" id="mozart1" onclick="pustiAudio()" onclick="pauzirajAudio()">
+			<img src="images/mozart.png" style="position: absolute; right: 10px; top: 0px;" height="115px" width="130px" id="mozart2" onclick="pustiAudio()" onclick="pauzirajAudio()">
+		
+	</div>
+	<center><table class="pozadina"></center>
+		<tr>
+		<td id="meni"><a href="home.html"><h1>POČETNA</h1></a></td>
+		<td id="meni" padding-top:30px;"><a href="istorija.html"><h1>ISTORIJA</h1></a></td>
+		<td id="meni"><a href="kultura.html"><h1>KULTURA</h1></a></td>
+		<td id="meni"><a href="posetiti.html"><h1>POSETITI</h1></a></td>
+		<td id="meni"><a href="anketa.html"><h1>ANKETA</h1></a></td>
+	</tr>
+	</table><br><br>
+	<div>
+		<span><strong>ISTORIJA BEČA</strong></span>
+	</div><br>
+	<table width="1300px" height="150%" onclick="return istorija(this)">
+		<tr>
+			<p><b><i><ins>Za promenu, kliknite na tekst ispod!</ins></i></b><br>
+			<td>
+				<p>Beč su osnovali Kelti oko godine 500. p.n.e. Godine 15. p.n.e. postaje pogranični grad <ins><i><strong>(Vindobona)</strong></i></ins> u sastavu odbrane <a target="_blank" href="https://sh.wikipedia.org/wiki/Rimsko_Carstvo">Rimskoga Carstva</a> od germanskih plemena na severu. U XIII veku gradu je zapretilo <a target="_blank" href="https://hr.wikipedia.org/wiki/Mongolsko_Carstvo">Mongolsko Carstvo</a> koje se prostiralo preko većeg dela današnje Rusije i Kine. Nakon smrti svog vođe, Mongoli su se povukli iz Evrope.</p>
+			<p>
+			U srednjem veku postaje sedište dinastije Babenberg, a kasnije 1440. i Habsburgovaca te je zbog toga glavni grad Svetog Rimskoga Carstva i, kasnije, Austro-Ugarske Monarhije. Od 1527. do 1918. Beč je bio glavni <bold><ins>grad-država</ins></bold> kojima je pripadao i veći deo Hrvatske pa je odigrao značajnu ulogu u istoriji hrvatskoga naroda. Tako je u Beču u razdoblju od 1624. do 1783. delovao hrvatski uticaj, koji je prvobitno delovao u Gracu. U XVI i XVII veku u blizini grada dvaput je poražena Osmanska vojska <i>(Opsada Beča 1529. i 1683.)</i>. Godine 1679. grad je pogodila epidemija kuge koja je ubila trećinu stanovništva.</p>
+			<p>
+			Centar srednjovekovnog Beča bio je <strong>Berghof</strong> <i>(danas ulica Salvatorgasse)</i>. Prvo originalno pominjanje datira još iz 881. godine iz Salburških anala gde se opisuje bitka protiv Mađara ali je nejasno da li sama lokacija obuhvata grad ili Bečku reku. Prilikom arheoloških iskopavanja pronađeni su grobovi iz VI veka, perioda kada su Bečom vladali Langobardi. Nakog toga Bečom su dalje gospodarili Sloveni pa potom Avari.</p>
+			<p>
+			Nakon završetka <a href="https://hr.wikipedia.org/wiki/Tre%C4%87i_kri%C5%BEarski_rat">Trećeg krstaškog rata, </a>engleski kralj Ričard I je prilikom povratka u Englesku zarobljen u Erdbergu <i> (nem. Erdberg) </i> pored Beča, što je danas područje 3. Bezirk-a. Novcem od otkupa, koji je plaćen za njegovo oslobađanje, osnovana je prva kovnica novca i počelo je prvo veće finansiranje gradske infrastrukture i proširenja Beča. Godine 1221. Beč je, kao drugi grad austrijskog vojvodstva posle Ensa <i>(nem. Enns)</i>, dobio status grada i poseban trgovački zakon <i>(nem. Stapelrecht)</i>. To znači da su svi trgovci, koji su prolazili kroz grad, svoje proizvode morali da nude i eventualno prodaju potencijalnim kupcima u Beču. Upravo to je omogućilo bečlijama posrednu trgovinu i to na način da su veoma brzo uspostavljene brojne trgovačke veze, posebno duž Dunava i prema Veneciji.</p>
+			<p>
+			Godine 1815. u njemu je održan <a target="_blank" href="https://sh.wikipedia.org/wiki/Be%C4%8Dki_kongres">Bečki kongres</a> na kojem je ustanovljen politički poredak nakon Napoleonovog poraza, a koji se održao s manjim izmenama sve do Prvog svtskog rata.
+			Nakon raspada Austro-Ugarske 1918., Beč postaje glavni grad Prve Austrijske Republike. Iako je bio jako važan tržišni centar, njegovo se značenje smanjuje.Godine 1938. Austriju je <a target="_blank" href="https://hr.wikipedia.org/wiki/Anschluss">Anschlussom</a> pripojila Nemačka te je grad izgubio status glavnog grada. Dana 2. aprila 1945. <a target="_blank" href="https://sh.wikipedia.org/wiki/Crvena_armija">Crvena armija</a>pokrenula ofanzivu te oslobodila grad od opsade. Tokom rata uništeno je hiljade javnih i privatnih zgrada. Nakon završetka rata, Austrija je odvojena od Nemačke te je gradu vraćen status glavnoga grada. U doba <a target="_blank" href="https://sh.wikipedia.org/wiki/Hladni_rat">Hladnoga rata</a> Beč je kao prestonica neutralne Austrije bio jedan od središta međunarodne špijunske aktivnosti.</p>
+			<p>
+			Druga polovina 20. veka predstvalja i najduže mirnodopsko razdoblje u istoriji grada koje je dovelo do razvoja Beča u modernu, prema svetu otvorenu metropolu. Već 1957. godine Beč je postao sedište međunarodne agencije za atomsku energiju <mark>(IAEA)</mark>, prve internacionalne organizacije nakon 1945. godine. Od 1965. grad je sedište i organizacije zemalja izvoznica nafte <mark>(OPEK-a)</mark>. U Beču je 1961. godine održan sastanak na najvišem nivou predsednika SAD DŽona F. Kenedija i sovjetskog predsednika Nikite Hruščova. Veoma važna godina za Beč bila je i 1980-ta kada je otvoren Bečki internacionalni centar <mark>(VIC)</mark> ili<mark> UNO-grad</mark> te je time Beč postao treće službeno sedište <a target="_blank" href="https://sh.wikipedia.org/wiki/Ujedinjene_nacije"> Ujedinjenih nacija</a>. Sve ovo je doprinelo da se Beč pozicionira kao prepoznatljivi kongresni i posrednički centar za rešavanje konflikata u svetskim razmerama. Upravo su u Beču 2006. godine vođeni pregovori o statusu Kosova i Metohije.</p>
+			<p>
+			Danas se Beč po svim međunarodnim kriterijumima i istraživanjima svrstava među gradove sa najvišim kvalitetom života na svetu. Tome doprinosi veliki udeo zelenih površina na gradskom području <i>(blizu 50%)</i> pa time i veoma dobri ekološki uslovi i standardi u gradu, izuzetno visoka socijalna sigurnost, nivo zaštite i poštovanja ljudskih prava, prvoklasan zdravstveni i visoko razvijen obrazovni sistem, efikasna i moderna javna uprava, jako razvijena gradska infrastrukutra <i>(putna mreža, sistem javnog gradskog prevoza i kvalitet stanovanja)</i>, bogata i kvalitetna ponuda alternativnih aktivnosti i najzad šarolikost kultura.</p>
+			<p>
+			U prilogu je dokumentarac koji govori o vremenu vladavine dinasije Habsburgovaca:
+			<center><iframe width="1000px" height="500" 
+			src="https://www.youtube.com/embed/iV8hcbkreJY">
+			</iframe></center></td></tr></p>
+		</table><br>
+		<center><table class="pozadina"></center>
+		<tr>
+		<td id="meni"><a href="home.html"><h1>POČETNA</h1></a></td>
+		<td id="meni"><a href="istorija.html"><h1>ISTORIJA</h1></a></td>
+		<td id="meni"><a href="kultura.html"><h1>KULTURA</h1></a></td>
+		<td id="meni"><a href="posetiti.html"><h1>POSETITI</h1></a></td>
+		<td id="meni"><a href="anketa.html"><h1>ANKETA</h1></a></td>
+	</tr>
+	</table><br>
+</body>
+</html>

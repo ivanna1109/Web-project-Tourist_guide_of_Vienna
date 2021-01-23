@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Početna</title>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+	<script type="text/javascript" src="JavaScript/animacija.js"></script>
+	<script type="text/javascript" src="JavaScript/cssIzmena.js"></script>
+	<style>
+		h1{
+			font-size:100%;
+			color:(51, 0, 37);
+			font-family: arial;
+		}
+	</style>
+</head> 
+<body onload="animacija(),naTekstu(),vanTeksta(),pauzirajAudio(),pustiAudio()">
+	<div>
+		<audio id="Audio">
+        	<source src="mp3/Mozart.mp3" type="audio/mpeg"></audio>
+			<img src="images/mozart.png" style="position: absolute; left: 10px; top: 0px;" height="115px" width="130px" id="mozart1" onmouseover=" return pustiAudio()" onmouseleave=" return pauzirajAudio()">
+			<img src="images/mozart.png" style="position: absolute; right: 10px; top: 0px;" height="115px" width="130px" id="mozart2" onmouseover=" return pustiAudio()" onmouseleave=" return pauzirajAudio()">
+		
+	</div>
+	<center><table class="pozadina">
+		<tr>
+		<td id="meni"><a href="home.html"><h1>POČETNA</h1></a></td>
+		<td id="meni"><a href="istorija.html"><h1>ISTORIJA</h1></a></td>
+		<td id="meni"><a href="kultura.html"><h1>KULTURA</h1></a></td>
+		<td id="meni"><a href="posetiti.html"><h1>POSETITI</h1></a></td>
+		<td id="meni"><a href="anketa.html"><h1>ANKETA</h1></a></td></tr>
+	</table><br><br>
+	<div class="Beč" align="left">
+		<a href="https://www.wien.info/en" target="_blank"><h4>Oficijalni sajt grada Beča</h4></a>
+	</div>
+	<div>
+		<span><strong>BEČ</strong></span>
+	</div><br><br>
+	<table>
+		<tr>
+			<td class="text" onmouseover="return naTekstu(this)" onmouseout="return vanTeksta(this)">
+				<p><strong>Beč</strong> je glavni grad Austrije i jedna od devet austrijskih saveznih država. Administrativno je podeljen na 23 okruga. Sa više od 1.800.000 stanovnika<i>(2.400.000 miliona na širem području grada)</i> je <ins>10. najveći grad Evropske unije</ins>, daleko najveći grad Austrije i njeno političko, gospodarsko i kulturno središte.</p>
+			<p>
+			Grad leži na Dunavu u najistočnijem delu Austrije nedaleko od granice sa Slovačkom, Mađarskom i Češkom, na raskršću putnih pravaca sever-jug, povezujući Baltik s Jadranom i zapad-istok, povezujući zapadnu i srednju Europu s jugoistočnom Europom i dalje Azijom. Istorija Beča počinje prije više od 4 tisućljeća čime se područje grada svrstava među najstarije ljudske naseobine na svetu. Beč je tako jedna od najstarijih metropola u srcu Europe, carski grad i mesto ukrštanja raznih kultura i uticaja. Bio je sedište imperatora Svetog rimskog carstva, glavni grad Austrijskog carstva te Austro-Ugarske monarhije kada je i dostigao svoj vrhunac krajem 19. veka i sa oko 2.000.000 stanovnika predstavljao četvrti grad po veličini na svetu <i> (nakon Londona, Pariza i New Yorka)</i>, <em><ins>kulturno središte, rečnu luku, industrijski i trgovački centar </ins></em> povezan s češkim, mađarskim i južnoslavenskim zemljama.</p>
+			</td>
+		</tr>
+	</table><br><br>
+	<form>
+		<fieldset bgcolor="#E8CFE8">
+		<table id = "podaci" border="1" width="200px" align="left">
+		<tr>
+			<td id="podaci" colspan="2" rowspan="2">
+				Država: 
+				<img src="images/zastava.png">Austrija<br><br>
+				Glavni grad: Beč</td>
+			<tr></tr>
+		</tr>
+		<tr>
+			<td id="podaci" colspan="2" rowspan="2">
+				Vlast<br>
+				<ul>
+					<li>Gladonačelnik: Michael Ludwig</li> 
+				</ul>
+			</td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td id="podaci" colspan="2" rowspan="7">
+				Površina:
+				<ul>
+					<li>Ukupna: 414,90 km²</li>
+					<li>Kopno: 395,51 km²</li>
+					<li>Voda: 395,51 km²</li>
+				</ul>
+				Visina: 190m
+				<ul>					
+					<li>Najviša tačka: 542m <i>(Hermannskogel)</i></li>
+					<li>Najniža tačka: 152m <i>(Lobau)</i></li>
+				</ul>
+			</td>
+		</tr>
+		<tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr> <tr></tr>
+		<tr>
+			<td id="podaci" colspan="2" rowspan="3">
+				Stanovništvo:
+				<ul>
+					<li>2012. godine: 1.731.263</li>
+					<li>Gustina: <br> 4.175,24 st./km2</li>
+				</ul></td>
+		</tr>
+		<tr></tr> <tr></tr> <tr></tr>
+		<tr>
+			<td id="podaci" colspan="2" rowspan="3">
+				<ul>
+					<li>Koordinate: <br>48°12′30″ SFŠ; 16°22′23″ IGD</li>
+					<li>Vremenska zona: <br>UTC+1, leti UTC+2</li>
+				</ul><br>
+				<img src="images/karta.png" align="center"></td>
+			</tr>
+	</table>
+	<table style="background: linear-gradient(to top right, #ff66ff 0%, #cc66ff 47%);" border="1" width="200px" align="right">
+		<tr>
+			<td><img src="images/tabela1.jpg" width="350px" height="222px"></td>
+			<td><img src="images/tabela2.jpg" width="350px" height="222px"></td>
+		</tr>
+		<tr>
+			<td><img src="images/tabela3.jpg" width="350px" height="222px"></td>
+			<td><img src="images/tabela4.jpg" width="350px" height="222px"></td>
+		</tr>
+		<tr>
+			<td><img src="images/tabela5.jpg" width="350px" height="222px"></td>
+			<td><img src="images/tabela6.jpg" width="350px" height="222px"></td>
+		</tr>
+	</table>
+
+	</fieldset>
+	</form><br>
+	<table style=" background: linear-gradient(to top right, #ff66ff 0%, #cc66ff 47%);" width="300px" align="center" >
+				<tr>
+			<td class="text">Pogled na katedralu Svetog Stefana<br>
+				<img src="images/place.jpg" width="500px" height="300px"><br>
+				Panorama grada<br><img src="images/visit.jpg" width="500px" height="305px"></td>
+			<td class="text">Bečka svakodnevnica<br>
+				<img src="images/grad.jpg" width="500px" height="300" align="center"><br>
+				Beč noću<br><img src="images/ovo.jpg" width="500px" height="310px" align="center"></td>
+			</tr>
+		</table><br>
+		<center><table class="pozadina"></center>
+		<tr>
+		<td id="meni"><a href="home.html"><h1>POČETNA</h1></a></td>
+		<td id="meni"><a href="istorija.html"><h1>ISTORIJA</h1></a></td>
+		<td id="meni"><a href="kultura.html"><h1>KULTURA</h1></a></td>
+		<td id="meni"><a href="posetiti.html"><h1>POSETITI</h1></a></td>
+		<td id="meni"><a href="anketa.html"><h1>ANKETA</h1></a></td></tr>
+	</table><br>
+</body>
+</html>

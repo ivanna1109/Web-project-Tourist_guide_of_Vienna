@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kultura</title>
+	<script type="text/javascript" src="JavaScript/animacija.js"></script>
+	<script type="text/javascript" src="JavaScript/iskociProzor.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+		<style>
+		h1{
+			font-size:100%;
+			color:(51, 0, 37);
+		}
+		h3 {
+			font-size: 180%;
+			color: rgb(51, 0, 37);
+			text-align: center;
+			text-underline-position: right;
+			text-shadow: 0.5px 0.5px;
+		}
+		h4 {
+			font-size: 120%;
+			background: linear-gradient(to top right, #ff66ff 6%, #ffffff 91%);
+			border: 3px solid rgb(51, 0, 37);
+			width: 400px;
+			color: rgb(51, 0, 37);
+			text-align: left;
+		}
+		.obaveštenje{
+			font-size: 80%;
+			color: (51, 0, 37);
+			text-align: center;
+			text-shadow: 0.5px 0.5px;
+		}
+	</style>
+</head> 
+<body onload="animacija(),prozorIskace()">
+	<div>
+		<audio id="Audio">
+        	<source src="mp3/Mozart.mp3" type="audio/mpeg"></audio>
+			<img src="images/mozart.png" style="position: absolute; left: 10px; top: 0px;" height="115px" width="130px" id="mozart1" onclick="pustiAudio()" onclick="pauzirajAudio()">
+			<img src="images/mozart.png" style="position: absolute; right: 10px; top: 0px;" height="115px" width="130px" id="mozart2" onclick="pustiAudio()" onclick="pauzirajAudio()">
+	</div>
+	<center><table class="pozadina">
+		<tr>
+		<td id="meni"><a href="home.html"><h1>POČETNA</h1></a></td>
+		<td id="meni"><a href="istorija.html"><h1>ISTORIJA</h1></a></td>
+		<td id="meni"><a href="kultura.html"><h1>KULTURA</h1></a></td>
+		<td id="meni"><a href="posetiti.html"><h1>POSETITI</h1></a></td>
+		<td id="meni"><a href="anketa.html"><h1>ANKETA</h1></a></td></tr>
+	</table><br><br>
+    <div>
+		<span><strong>BEČ - SINONIM ZA KULTURU</strong></span>
+	</div><br><br>
+	<table width="1300px" height="150%" bgcolor="#E8CFE8">
+		<tr>
+		<td><p>U Beču postoji 100.000 mesta kao što su pozorišta, bioskopi i muzičke dvorane. Ljubitelji umetnosti imaju priliku da posete više od 100 muzeja i izložbenih prostora, kao i 140 galerija. Bečke kulturne institucije godišnje posete milioni ljudi, a mnogi od njih to rade u 80 gradskih festivala umetnosti.</p>
+		<h3><i><b>Muzeji u Beču</i></b></i></h3>
+		<h4><ins>Prirodnjački muzej u Beču</ins></h4>
+		<p><a target="_blank" href="https://www.nhm-wien.ac.at/en">NHM Wien</a> je jedan od najvećih muzeja i neuniverzitetskih istraživačkih instituta u Austriji i važan centar izvrsnosti za sva pitanja koja se odnose na prirodne nauke. 39 izložbenih prostorija muzeja prostiru se na 8.460 kvadratnih metara i predstavljaju više od 100.000 objekata. To je dom za 30 miliona objekata koji su dostupni više od 60 naučnika i brojnih gostujućih istraživača koji sprovode temeljna istraživanja u širokom spektru tema vezanih za nauku o ljudima, nauke o zemlji i nauke o životu.</p>
+		<a target="_blank" href="https://www.nhm-wien.ac.at/en"><img src="images/nhm.jpg"  width="700px" height="250px" align="left"> </a><br>
+		<center>
+			<p><b>Naturhistorisches Museum Wien</b><br>
+			Burgring 7<br>
+			1010 Vienna, Austria<br>
+			Telefon: + 43 (1) 521 77 - 0<br>
+			Fax: + 43 (1) 523 52 54<br>
+			Mail: info@nhm-wien.ac.at<br>
+
+			Ulaz za posetioce<br>
+			Maria-Theresien-Platz<br>
+			1010 Vienna</p></center>
+		</center>
+		<h4><ins>Muzej istorije umetnosti u Beču</ins></h4>
+		<p><a target="_blank" href="https://www.khm.at/en/">KHM Wien</a> je muzej umetnosti u Beču koji se nalazi u reprezentativnoj palati na Ringstraßeu. Njegova kolekcija sadrži dela od starog Egipta do XVIII veka, od čega se posebno vredna kolekcija renesansnih i baroknih slika talijanske, nemačke, flamanske i španske slikarske škole. Glavna kolekcija muzeja je ona Habsburgovaca, i čini je ponajviše portreti i oklopi koje su skupili <b>Ferdinand II. Tirolski i car Rudolf II.</b>, te slike koje je skupio nadvojvoda <b>Leopold Wilhelm Austrijski</b>. Pored njih, tu su smeštene i kolekcije staroegipatskih i bliskoistočnih umetnina, starogrčkih i starorimskih umetnina, kolekcija skulptura i dela primenjenih umetnosti, kabineti kovanica i biblioteka.</p>  
+		<p><a target="_blank" href="https://www.khm.at/en/"><img src="images/istorijski.jpg"  width="600px" height="250px" align="left"></a>
+		<img src="images/unutra.jpg"  width="600px" height="250px" align="right"></p>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+		<br><h4><ins>Bečki muzej</ins></h4>
+		<p>Grad Beč ima svoj gradski muzej pod nazivom <a target="_blank" href="https://www.wienmuseum.at/en.html">Bečki muzej</a>. U ovom muzeju, vekovna bečka istorija je prikazana kroz mešavinu umetničkih i istorijskih zbirki. Pored glavne zgrade, muzej ima i nekoliko ogranaka, od kojih su najvažniji <strong>MUSA, Hermesvilla u Lainz zoološkom vrtu (Lainzer Tiergarten)</strong> i spomenici posvećeni muzičarima zvanim Musiker Gedenkraume. Česte specijalne izložbe stalno prikazuju nešto novo u istoriji Beča. Sve izložbe i kolekcije <i>"Bečkog muzeja"</i> možete posetiti besplatno svake prve nedelje u mesecu. Društveno ugrožene osobe sa izložbom <strong>Viener Kulturpass "Hunger auf Kunst und Kultur"</strong> mogu je besplatno posetiti kad god požele.</p>
+		<a target="_blank" href="https://www.wienmuseum.at/en.html"><img src="images/wienmuzej.jpg"  width="600px" height="250px" align="right"> </a>
+		<center><p>Kontakt:<br>
+			<b>Wien Museum am Karlsplatz</b><br>
+			4., Karlsplatz 8 <br>
+			Telefon: +43 1 505 87 47 <br>
+			E-mail: office@wienmuseum.at<br><br>
+
+			Radno vreme:<br>
+			Od utorka do nedelje i praznikom od 9 do 18 sati<br>
+			Posebne izložbe: dodatno sredom do 20 sati<br>
+			24. i 31.12. od 9 do 13 sati</p>
+		</center><br>
+		<h4><ins>Muzej Musa</ins></h4>
+		<p><a target="_blank" href="http://www.musa.at/en/">
+		Muzej MUSA</a> startna Galerija Artoteka/Muzej Startgalerie Artothek je kolekcija zbirke savremene umetnosti odseka za kulturu Beča. MUSA trenutno pokriva oko 40.000 predmeta od oko 4.500 autora iz svih oblasti umetnosti. Radove je subvencionisalo Odeljenje za kulturu za ovu namenu od 1951. godine i nudi pregled razvoja bečke umetnosti poslednjih decenija. U MUSA, Gradska vijećnica predstavlja tematske i autoritativne izložbe. Galerija Startgalerie / Startna prikazuje radove mladih bečkih umetnika koji su na početku svoje karijere, a Artothek / Artoteka iznajmljuje grafičke radove privatnim licima u gradu. Do četiri slike do dvanaest meseci mogu se iznajmiti od originalnog fundusa. Sva papirologija je postavljena na prolazu i predstavljena je u aluminijskom okviru sa pleksiglasom. Cena zakupa iznosi 2,5 eura po slici / mjesečno i plaća se unaprijed jer se taj iznos istovremeno zaključuje i osigurava za rad. Prilikom prvog rezervisanja, potrebna je samo službena lična karta i apartman je prihvaćen.</p>
+		<a target="_blank" href="http://www.musa.at/en/"><img src="images/musa.jpg" width="500px" height="250px" align="left"></a>
+		<center><p>Kontakt:<br>
+			<b>MUSA Museum Startgalerie Artothek</b><br>
+			1., Felderstraße 6-8<br>
+			Telefon: +43 1 4000 - 8400<br>
+			E-mail: musa@musa.at<br>
+			Radno vreme: <br> ut., sr., pe. 11-18 sati, če. 11-20 sati, su. 11-16 sati,<br> nedeljom, ponedeljkom i praznikom zatvoreno.<br>
+			Ulaz slobodan</p><br>
+		</center>
+		<h4><ins>Bečka muzejska četvrt</ins></h4>
+
+		<p><a target="_blank" href="https://www.mqw.at/en/">MuseumsQuartier Wien</a> je jedan od najvećih svetskih umetničkih areala u kojem je smešteno 60 kulturnih institucija. Posebno je atraktivan za ljubitelje arhitekture, mode i dizajna. Pored velikih muzeja tu se nalaze i male inicijative, udruženja, agencije i redakcije iz oblasti kulture. Deo pod nazivom <mark>Q21</mark> u prizemlju baroknog <i>Fischer von Erlach</i> trakta dostupan je za posetioce svakodnevno od 10 do 22h. Unutrašnja dvorišta, cafei i shopovi daju osećaj mira usred gradske buke. Muzejsku četvrt specifičnom čini kombinacija umetnosti i prostora za život i mešavina istorijskih zgrada i savremene muzejske arhitekture. Mnoge manifestacije u dvorištima i pasažima MQ su javno dostupne bez plaćanja ulaza.</p>
+		<a target="_blank" href="https://www.mqw.at/en/"><img src="images/quartier.jpg" width="500px" height="200px" align="left"></a>
+
+		<center><p>Kontakt:<br>
+		<b>MuseumsQuartier Wien</b><br>
+		7., Museumsplatz 1/5</p>
+		<p><a class="link" target="_blank" href="http://wieneruhr.at/popis-muzeja-u-becu/">Lista svih muzeja koje možete posetiti</a><br><br></p>
+	</center>
+	</td></tr>
+	</td>
+	</tr>
+</table><br>
+<center><table class="pozadina"></center>
+		<tr>
+		<td id="meni"><a href="home.html"><h1>POČETNA</h1></a></td>
+		<td id="meni"><a href="istorija.html"><h1>ISTORIJA</h1></a></td>
+		<td id="meni"><a href="kultura.html"><h1>KULTURA</h1></a></td>
+		<td id="meni"><a href="posetiti.html"><h1>POSETITI</h1></a></td>
+		<td id="meni"><a href="anketa.html"><h1>ANKETA</h1></a></td>
+	</tr>
+	</table><br>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Anketa</title>
+	<script type="text/javascript" src="JavaScript/validacija.js"></script>
+	<script type="text/javascript" src="JavaScript/animacija.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+		<style>
+		h1{
+			font-size:100%;
+			color:(51, 0, 37);
+		}
+	</style>
+</head> 
+<body onload="animacija(),inicijalizuj()">
+	<div>
+		<audio id="Audio">
+        	<source src="mp3/Mozart.mp3" type="audio/mpeg"></audio>
+			<img src="images/mozart.png" style="position: absolute; left: 10px; top: 0px;" height="115px" width="130px" id="mozart1" onclick="pustiAudio()" onclick="pauzirajAudio()">
+			<img src="images/mozart.png" style="position: absolute; right: 10px; top: 0px;" height="115px" width="130px" id="mozart2" onclick="pustiAudio()" onclick="pauzirajAudio()">
+	</div>
+	<center><table class="pozadina">
+		<tr>
+		<td id="meni"><a href="home.html"><h1>POČETNA</h1></a></td>
+		<td id="meni"><a href="istorija.html"><h1>ISTORIJA</h1></a></td>
+		<td id="meni"><a href="kultura.html"><h1>KULTURA</h1></a></td>
+		<td id="meni"><a href="posetiti.html"><h1>POSETITI</h1></a></td>
+		<td id="meni"><a href="anketa.html"><h1>ANKETA</h1></a></td>
+	</tr>
+	</table><br><br>
+	<div align="left">
+		<a href="https://www.wien.info/en" target="_blank"><h4>Oficijalni sajt grada Beča</h4></a>
+	</div>
+	<div>
+		<span><strong>VAŠI UTISCI O BEČU</strong></span>
+	</div><br><br>
+	<form name="forma">
+		<fieldset>
+			<legend><b>Vaši osnovni podaci</b></legend>
+			Pol:<br>
+			<input class="pol" type="radio" name="Pol" required>Muški<br>
+			<input class="pol" type="radio" name="Pol" required>Ženski<br>
+			Vaše ime:
+			<input id="ime" type="text" name="Ime" type="text" size="20" required=""><br>
+			Vaše prezime:
+			<input id="prezime" type="text" name="Prezime" type="text" size="20" required=""><br>
+			Datum rođenja:
+			<input type="date" name="Datum" value="2001-01-01" required=""><br>
+			Vaša e-mail adresa:
+			<input id="email" name="email" type="text" required=""><br><br>
+			<input type="submit" name="Pošalji rezultate" value="Pošalji rezultate" required>
+		</fieldset>
+	</form><br><br>
+	<form style="background-color: rgb(255, 204, 242)">
+		<fieldset>
+			<legend><b>Vaši utisci o Beču</b></legend>
+			Koliko dana ste bili u Beču?
+			<input type="numbering" name="Dani" value="5"><br><br>
+			Koliko Vam se Beč svideo?
+			<select name="sviđanje" value="Mnogo mi se svideo">
+				<option value="Mnogo mi se svideo">Mnogo mi se svideo</option>
+				<option value="Svideo mi se">Svideo mi se</option>
+				<option value="Grad kao i svaki drugi">Grad kao i svaki drugi</option>
+				<option value="Nije mi se nešto dopao">Nije mi se nešto svideo</option>
+				<option value="Uopšte mi se nije svideo">Uopšte mi se nije svideo</option>
+		</select><br><br>
+			Da li biste kolegama, prijateljima, porodici preporučili da dođe u Beč?
+			<input type="text" name="Preporuka"><br><br>
+		     Da li ćete se ponovo vratiti u Beč?
+		     <select name="vratiti" value="Da">
+				<option value="Da">Da</option>
+				<option value="Možda">Možda</option>
+				<option value="Ako bude bilo prilike">Ako bude bilo prilike</option>
+				<option value="Ne">Ne</option>
+		</select><br><br>
+			Da li imate neke fotografije Beča koje ste napravili? Ako imate, možete ih dodati ovde:
+			<input type="button" name="Dodaj" value="Dodaj fotografije"><br><br>
+
+			Možete li nam ukratko opisati Vaš boravak i šta Vam se najviše svidelo?<br><br>
+			<textarea>Ovde opišite Vaš boravak</textarea><br><br>
+		</fieldset>
+	</form><br><br>
+	<form>
+		<fieldset>
+			<legend><b>Utisci o našoj stranici</b></legend>
+			Da li ste lako pronašli našu stranicu?
+			<select name="vratiti" value="Da">
+				<option value="Da">Da</option>
+				<option value="Ne">Ne</option>
+			</select><br><br>
+			Da li mislite da je naša stranica zanimljiva za ljubitelje Beča?<br>
+			<input type="radio" name="korisna">Da<br>
+			<input type="radio" name="korisna">Može da bude bolja<br>
+			<input type="radio" name="korisna">Ne<br><br>
+			Kako bismo unapredili našu stranicu, molimo Vas da nam date savete i sugestije, kao i konsktuktivne kritike:<br><br>
+			<textarea>Vaše mišljenje</textarea><br>
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<input type="button" name="Pošalji rezultate" value="Pošalji rezultate">
+		</fieldset>
+	</form>
+	<center><table class="pozadina"></center>
+		<tr>
+		<td id="meni"><a href="home.html"><h1>POČETNA</h1></a></td>
+		<td id="meni"><a href="istorija.html"><h1>ISTORIJA</h1></a></td>
+		<td id="meni"><a href="kultura.html"><h1>KULTURA</h1></a></td>
+		<td id="meni"><a href="posetiti.html"><h1>POSETITI</h1></a></td>
+		<td id="meni"><a href="anketa.html"><h1>ANKETA</h1></a></td>
+	</tr>
+	</table><br>
+</body>
+</html>
